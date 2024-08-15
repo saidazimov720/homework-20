@@ -1,4 +1,4 @@
-.main{
+.main {
     width: 752px;
     height: 297px;
     /* background-color: green; */
@@ -9,34 +9,45 @@
     color: grey;
     margin-top: 150px;
 }
-.you, span{
+
+.you,
+span {
     font-size: 100px;
     text-align: center;
 }
-.vs{
+
+.vs {
     font-size: 80px;
     margin-left: 40px;
 }
-.comp, p{
+
+.comp,
+p {
     font-size: 50px;
     text-align: center;
 }
-.sym{
+
+.sym {
     border: 1px solid transparent;
     padding: 0 30px 0 30px;
     background-color: rgb(230, 230, 230);
     border-radius: 50%;
 }
 
-.bar{
+.bar {
     background-color: rgb(202, 201, 201);
     border: 1px solid grey;
     width: 177px;
     height: 519px;
-    margin-top: 169px;
+    margin-top: 9px;
     margin-left: 17px;
 }
-.img{
-    width: 100px;
-    height: 100px;
+
+.img {
+    width: 80px;
+    height: 80px;
+}
+
+p {
+    font-size: 30px;
 }
