@@ -50,5 +50,6 @@ function playGame(userChoice) {
     }   
 
     document.querySelector('.you .sym').innerHTML = `<img class="img" src="${userImage}" alt="${userChoice}">`;
+    document.querySelector('.you .sym').innerHTML = `<img class="img" src="${computerImage}" alt="${computerChoice}">`;
     
 }
