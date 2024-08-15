@@ -5,15 +5,10 @@ function startGame() {
     isGameActive = true;
     let timeLeft = 5;
     document.getElementById('timer').textContent = `Time left ${timeLeft} s`;
-    countdown = setInterval(() => {
-        timeLeft--;
-        document.getElementById('timer').textContent = `Time left ${timeLeft}`;
-        if (timeLeft <= 0) {
-            clearInterval(countdown);
-            document.getElementById('timer').textContent = 'Time is up';
-            isGameActive = false;
-        }
-    }, 1000);
+    timeoutID = setTimeout(() => {
+        isGameActive = false;
+        document.getElementById('timer').textContent = 'Time is up!';
+    }, timeLeft * 1000);
 }
 function playGame(userChoice) {
     if (!isGameActive) return;
