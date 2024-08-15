@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .main {
     width: 752px;
     height: 297px;
@@ -19,6 +24,7 @@ span {
 .vs {
     font-size: 80px;
     margin-left: 40px;
+    margin-right: 40px;
 }
 
 .comp,
@@ -38,9 +44,14 @@ p {
     background-color: rgb(202, 201, 201);
     border: 1px solid grey;
     width: 177px;
-    height: 519px;
-    margin-top: 9px;
+    height: 360px;
+    top: 169px;
     margin-left: 17px;
+    position: absolute;
+}
+.rock, .paper, .scissor{
+    text-align: center;
+    border: 1px solid grey;
 }
 
 .img {
@@ -50,4 +61,39 @@ p {
 
 p {
     font-size: 30px;
+}
+button {
+    margin-left: 600px;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: #10a4f8;
+    box-shadow: rgb(0 0 0 /5) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-decoration: lowercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+button,
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+button:hover {
+    /* letter-spacing: 3px; */
+    background-color: hsl(217, 69%, 55%);
+    color: white;
+    box-shadow: rgb(16 164 248) 0px 7px 29px 0px;
+}
+
+button:active {
+    /* letter-spacing: 3px; */
+    background-color: hsl(210, 70%, 55%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(16 164 248) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
 }
