@@ -16,11 +16,12 @@ function startGame() {
     }, 1000);
 }
 function playGame(userChoice) {
-    if(!isGameActive) return;
+    if (!isGameActive) return;
     clearInterval(countdown);
     isGameActive = false;
     document.getElementById('timer').textContent = '';
     const choices = ['rock', 'scissors', 'paper'];
     const computerChoice = choices[Math.floor(math.random() * 3)];
-    
+    document.getElementById('user-choice').textContent = `Your choice: ${userChoice}`;
+    document.getElementById('computer-choice').textContent = `Computer's choice: ${computerChoice}`;
 }
