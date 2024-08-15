@@ -4,4 +4,8 @@ button{
     cursor: pointer;
     border: 0;
     background-color: white;
+    box-shadow: rgb(0 0 0 /5) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-decoration: lowercase;
+    font-size: 15px;
 }
