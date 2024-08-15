@@ -48,4 +48,7 @@ function playGame(userChoice) {
             computerImage = './media/scissors.png';    
             break;
     }   
+
+    document.querySelector('.you .sym').innerHTML = `<img class="img" src="${userImage}" alt="${userChoice}">`;
+    
 }
