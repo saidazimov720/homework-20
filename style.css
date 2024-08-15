@@ -1,3 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    align-items: center;
+}
+img{
+    width: 481px;
+    height: 497px;
+    left: 480px;
+    margin-left: 450px;
+}
 .buttons {
     display: flex;
     justify-content: space-around;
