@@ -24,4 +24,17 @@ function playGame(userChoice) {
     const computerChoice = choices[Math.floor(math.random() * 3)];
     document.getElementById('user-choice').textContent = `Your choice: ${userChoice}`;
     document.getElementById('computer-choice').textContent = `Computer's choice: ${computerChoice}`;
+    let userImage, computerImage;
+    switch (userImage) {
+        case 'rock':
+            userImage = './media/leadership.png';
+            break;
+        case 'paper':
+            userImage = './media/hand.png';
+            break;
+        case 'scissor':
+            userImage = './media/scissors.png';
+            break;
+        }
+
 }
