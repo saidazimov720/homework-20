@@ -35,8 +35,8 @@ function playGame(userChoice) {
         case 'scissor':
             userImage = './media/scissors.png';
             break;
-        }
-     
+    }
+
     switch (computerImage) {
         case 'rock':
             computerImage = './media/leadership.png';
@@ -45,11 +45,21 @@ function playGame(userChoice) {
             computerImage = './media/hand.png';
             break;
         case 'scissor':
-            computerImage = './media/scissors.png';    
+            computerImage = './media/scissors.png';
             break;
-    }   
+    }
 
     document.querySelector('.you .sym').innerHTML = `<img class="img" src="${userImage}" alt="${userChoice}">`;
     document.querySelector('.you .sym').innerHTML = `<img class="img" src="${computerImage}" alt="${computerChoice}">`;
-    
+    let result;
+    if (userChoice === computerChoice) {
+        result = "It is a tie";
+    } else if ((userChoice === 'rock' && computerChoice === 'scissors') ||
+        (userChoice === 'scissors' && computerChoice === 'paper') ||
+        (userChoice === 'paper' && computerChoice === 'rock')) {
+                result = "You win";
+    } else{
+        result = "You lose";
+    }
+    document.getElementById('outcome').textContent = result;
 }
