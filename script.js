@@ -36,5 +36,16 @@ function playGame(userChoice) {
             userImage = './media/scissors.png';
             break;
         }
-
+     
+    switch (computerImage) {
+        case 'rock':
+            computerImage = './media/leadership.png';
+            break;
+        case 'paper':
+            computerImage = './media/hand.png';
+            break;
+        case 'scissor':
+            computerImage = './media/scissors.png';    
+            break;
+    }   
 }
