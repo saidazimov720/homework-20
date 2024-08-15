@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./step21.css">
-    <title>Document</title>
+    <title>Rock Paper Scissors Game</title>
 </head>
 <body>
     <div class="main">
@@ -18,22 +18,30 @@
             <p>computer</p>
         </div>
     </div>
-    <div class="bar">
-        <button><div class="rock">
-            <img class="img" src="./media/leadership.png" alt="">
-            <p>Rock</p>
-        </div></button>
-        <button><div class="paper">
-            <img class="img" src="./media/hand.png" alt="">
-            <p>Paper</p>
-        </div></button>
-        <button>
-            <div class="scissor">
-                <img class="img" src="./media/scissors.png" alt="">
-                <p>Scissors</p>
-            </div>
-        </button>
+
+    <div id="results">
+        <p id="user-choice"></p>
+        <p id="computer-choice"></p>
+        <p id="outcome"></p>
     </div>
+
+    <div class="bar">
+        <div class="rock" onclick="playGame('rock')">
+            <img class="img" src="./media/leadership.png" alt="Rock">
+            <p>Rock</p>
+        </div>
+        <div class="paper" onclick="playGame('paper')">
+            <img class="img" src="./media/hand.png" alt="Paper">
+            <p>Paper</p>
+        </div>
+        <div class="scissor" onclick="playGame('scissor')">
+            <img class="img" src="./media/scissors.png" alt="Scissors">
+            <p>Scissors</p>
+        </div>
+    </div>
+
     <a href="./step3.html"><button>Start</button></a>
+
+    <script src="./script.js"></script>
 </body>
 </html>
