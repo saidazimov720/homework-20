@@ -8,10 +8,18 @@ function startGame() {
     let timeLeft = 5;
     document.getElementById('timer').textContent = `Time left: ${timeLeft}s`;
 
-    timeoutID = setTimeout(() => {
-        isGameActive = false;
-        document.getElementById('timer').textContent = 'Time is up!';
-    }, timeLeft * 1000);
+    function countdown() {
+        if (timeLeft > 0) {
+            timeLeft--;
+            document.getElementById('timer').textContent = `Time left: ${timeLeft}s`;
+            timeoutID = setTimeout(countdown, 1000);
+        } else {
+            isGameActive = false;
+            document.getElementById('timer').textContent = 'Time is up!';
+        }
+    }
+
+    countdown();
 }
 
 function playGame(userChoice) {
@@ -29,7 +37,7 @@ function playGame(userChoice) {
 
     let userImage, computerImage;
 
-    switch (userChoice) {
+    switch(userChoice) {
         case 'rock':
             userImage = './media/leadership.png';
             break;
@@ -41,7 +49,7 @@ function playGame(userChoice) {
             break;
     }
 
-    switch (computerChoice) {
+    switch(computerChoice) {
         case 'rock':
             computerImage = './media/leadership.png';
             break;
