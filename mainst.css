@@ -59,5 +59,18 @@ button:active {
         width: 381px;
         height: 397px;
     }
+    .button{
+        font-size: 10px;
+        padding: 10px 30px;
+    }
 }
 
+@media(max-width: 768px){
+    .logo2{
+        width: 281px;
+        height: 297px;
+    }
+    .button{
+        font-size: 5px;
+    }
+}
