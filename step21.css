@@ -46,7 +46,7 @@
     border: 1px solid grey;
     width: 107px;
     height: 450px;
-    top: 149px;
+    top: 109px;
     margin-left: 10px;
 }
 
@@ -105,5 +105,7 @@ button:active {
         display: flex;
         flex-direction: row;
         top: 5px;
+        width: 102px;
+        height: 450px;
     }
 }
