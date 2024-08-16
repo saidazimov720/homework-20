@@ -42,8 +42,6 @@
 
 .bar {
     position: absolute;
-    background-color: rgb(202, 201, 201);
-    border: 1px solid grey;
     width: 107px;
     height: 450px;
     top: 109px;
@@ -51,6 +49,8 @@
 }
 
 .rock, .paper, .scissor {
+    background-color: whitesmoke;
+    border: 1px solid grey;
     width: 107px;
     height: 140px;
     text-align: center;
