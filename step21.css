@@ -4,12 +4,12 @@
     padding: 0;
 }
 .main {
-    width: 752px;
+    width: 100%;
     height: 257px;
     display: flex;
     flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: grey;
     margin-top: 150px;
 }
@@ -41,16 +41,18 @@
 }
 
 .bar {
+    position: absolute;
     background-color: rgb(202, 201, 201);
     border: 1px solid grey;
     width: 107px;
-    height: 440px;
-    top: 169px;
-    margin-left: 17px;
-    /* position: absolute; */
+    height: 450px;
+    top: 149px;
+    margin-left: 10px;
 }
 
 .rock, .paper, .scissor {
+    width: 107px;
+    height: 140px;
     text-align: center;
     border: 1px solid grey;
     cursor: pointer;
@@ -64,18 +66,17 @@
 }
 
 p {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 button {
-    margin-left: 600px;
+    /* margin-left: 450px;  */
     padding: 17px 40px;
     border-radius: 50px;
     cursor: pointer;
     border: 0;
     background-color: #10a4f8;
     box-shadow: rgb(0, 0, 0 / 5%) 0 0 8px;
-    text-transform: lowercase;
     font-size: 15px;
     transition: all 0.5s ease;
 }
@@ -97,4 +98,12 @@ button:active {
     box-shadow: rgb(16 164 248) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
+}
+
+@media (max-width: 925px) {
+    .bar{
+        display: flex;
+        flex-direction: row;
+        top: 5px;
+    }
 }
