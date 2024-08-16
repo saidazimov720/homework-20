@@ -4,13 +4,15 @@
     padding: 0;
 }
 .logo{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .logo2{
     width: 481px;
     height: 497px;
     left: 480px;
-    margin-left: 450px;
+    /* margin-left: 450px; */
 }
 .buttons {
     display: flex;
@@ -51,3 +53,11 @@ button:active {
     transform: translateY(10px);
     transition: 100ms;
 }
+
+@media(max-width:1000px){
+    .logo2{
+        width: 381px;
+        height: 397px;
+    }
+}
+
