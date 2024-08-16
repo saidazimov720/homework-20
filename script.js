@@ -67,7 +67,7 @@ function playGame(userChoice) {
     let result;
 
     if (userChoice === computerChoice) {
-        result = "It's a tie!";
+        result = "Equal";
     } else if (
         (userChoice === 'rock' && computerChoice === 'scissors') ||
         (userChoice === 'scissors' && computerChoice === 'paper') ||
